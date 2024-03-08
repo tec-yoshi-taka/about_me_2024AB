@@ -1,4 +1,4 @@
-# お絵かきアプリ作成してみよう
+# 自己紹介ページを作ってみよう
 
 ![完成をQRで確認しよう](./images/QR.png)
 
@@ -9,28 +9,28 @@
 
 ---
 
-## 資料
-
-[資料へのリンク](https://drive.google.com/file/d/1VRlSrcz8XDlrfgTHXIzb0Xhz4_bze7aO/view?usp=sharing)
-
 ---
 
-## Javascript のコードの部分はこちらを参照してください。
+## 自分の名前を書いてみよう
 
----
+### 漢字
 
-## 消しゴム機能を設定してみよう
+```HTML
+<title>〇〇〇〇の自己紹介ページ</title>
+```
 
-```Javascript
-//消しゴム
-eraser.addEventListener('mousedown', (e) => {
-  //画面をクリアする
-  ctx.clearRect(0, 0, WIDTH, HEIGHT);
-  //塗りの色を指定する（白）
-  ctx.fillStyle = 'rgb(255,255,255)';
-  //四角形を描画する
-  ctx.fillRect(0, 0, WIDTH, HEIGHT);
-});
+```HTML
+<h1>〇〇〇〇の自己紹介ページ</h1>
+```
+
+```HTML
+<p class="txet">〇〇〇〇</p>
+```
+
+### ローマ字
+
+```HTML
+<small>Copyright &copy; 2024 〇〇〇〇 All Rights Reserved.</small>
 ```
 
 ---

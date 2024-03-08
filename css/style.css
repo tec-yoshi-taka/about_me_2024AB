@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+body {
+  /* 背景画像の変更 */
+  background: url(../images/bg07.png);
+  line-height: 1.5;
+}
+
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+
+header {
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  /* 見出し１の文字色を変更 */
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #aaaaaa;
+}
+
+main {
+  width: 780px;
+  background: #ffffff;
+  box-shadow: 0 0 10px #e9e9e9;
+  padding: 50px 80px;
+}
+
+h2 {
+  /* 見出し２の背景色を変更 */
+  background-color: #8d6212;
+  /* 見出し２の文字色を変更 */
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 0 0 20px 0;
+  padding: 10px 0 10px 0;
+  border-radius: 10px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+}
+
+.txet {
+  margin: 0 0 40px 0;
+  li {
+    margin-bottom: 10px;
+  }
+}
+
+.fav {
+  margin: 15px 0 70px 0;
+  line-height: 165%;
+}
+
+.youtube,
+.map {
+  display: flex;
+  justify-content: center;
+}
+
+p.top {
+  text-align: right;
+}
+
+a.pagetop {
+  color: #8d6212;
+  text-decoration: none;
+}
+
+a.pagetop:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  width: 100%;
+  height: 80px;
+  font-size: 16px;
+  color: #ccc;
+  line-height: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 96vw;
+    margin: 0 auto;
+  }
+  main {
+    width: 95%;
+    padding: 10px 20px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 30px;
+  }
+}

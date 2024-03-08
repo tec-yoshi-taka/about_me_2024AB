@@ -1,8 +1,8 @@
 # 自己紹介ページを作ってみよう
 
+<br>
+ 
 [現在の状態](https://tec-yoshi-taka.github.io/about_me_2024AB/)
-
-<br><br>
 
 ---
 

@@ -1,10 +1,7 @@
 # 自己紹介ページを作ってみよう
 
-![完成をQRで確認しよう](./images/QR.png)
+[現在の状態](https://tec-yoshi-taka.github.io/about_me_2024AB/)
 
-## 完成のリンク
-
-[完成へのリンク](https://tec-yoshi-taka.github.io/js-paint-finish/)
 <br><br>
 
 ---

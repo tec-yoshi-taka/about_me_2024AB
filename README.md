@@ -35,87 +35,80 @@
 
 ---
 
-## 色を増やしてみよう
+## 学校を選んだ理由、希望職種
 
 ```HTML
-<li id="green"><i class="fas fa-fill-drip"></i></li>
-<li id="yellow"><i class="fas fa-fill-drip"></i></li>
-<li id="black"><i class="fas fa-fill-drip"></i></li>
+<h3>東京電子専門学校を選んだ理由</h3>
+<p class="txet">
+  理由を書いてください。理由を書いてください。<br>
+  理由を書いてください。
+</p>
 ```
-
----
-
-## 線の色や太さを指定する
-
-```javascript
-//線の色
-ctx.strokeStyle = "#ec5064";
-//線の太さ
-ctx.lineWidth = 2;
-//線のボケ具合
-ctx.shadowColor = "#ec5064";
-```
-
----
-
-## ペンの色と太さを変数に代入してみよう
-
-```javascript
-//ペンの色と太さを変数に代入してみよう
-let penColor = "rgb(255,0,0)";
-let penSize = 2;
-```
-
----
-
-## 線の色や太さを変更できるようにしよう
-
-```javascript
-//線の色
-ctx.strokeStyle = penColor;
-//線の太さ
-ctx.lineWidth = penSize;
-//線のボケ具合
-ctx.shadowColor = penColor;
-```
-
----
-
-## クリックで色を変更してみよう
-
-```javascript
-//色を変更
-colors.forEach((colorli) => {
-  colorli.addEventListener("mousedown", (e) => {
-    colors.forEach((clr) => {
-      clr.classList.remove("active");
-    });
-    colorli.classList.add("active");
-    style = window.getComputedStyle(e.target);
-    penColor = style.getPropertyValue("color");
-  });
-});
-```
-
----
-
-## さらにペンを増やす（HTML）
 
 ```HTML
-<!-- 好きなの色を増やそう -->
-<li id="other"><i class="fas fa-fill-drip"></i></li>
+<h3>将来就きたい職種</h3>
+<p class="txet">
+  希望職種を書いてください。<br>
+  その理由も書きてください。
+</p>
 ```
 
-## さらにペンを増やす（CSS）
+---
+
+## 趣味
+
+```HTML
+<h3>趣味</h3>
+<ul class="txet">
+  <li>趣味①を書きてください。</li>
+  <li>趣味②を書きてください。</li>
+  <li>趣味③を書きてください。</li>
+</ul>
+```
+
+---
+
+## 背景色・文字色
+
+### 見出し１
 
 ```css
-#color li#other {
-  background-color: お好きな色;
+h1 {
+  /* 見出し１の文字色を変更 */
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px #aaaaaa;
 }
-#color li#other.active,
-#color li#other:hover {
-  color: お好きな色;
-  background-color: #fff;
+```
+
+### 見出し２
+
+```css
+h2 {
+  /* 見出し２の背景色を変更 */
+  background-color: #8d6212;
+  /* 見出し２の文字色を変更 */
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  font-size: 24px;
+  letter-spacing: 2px;
+  margin: 0 0 20px 0;
+  padding: 10px 0 10px 0;
+  border-radius: 10px;
+}
+```
+
+---
+
+## 背景画像
+
+```css
+body {
+  /* 背景画像の変更 */
+  background: url(../images/bg07.png);
+  line-height: 1.5;
 }
 ```
 
